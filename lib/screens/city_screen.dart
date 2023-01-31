@@ -11,7 +11,7 @@ class CityScreen extends StatefulWidget {
 }
 
 class _CityScreenState extends State<CityScreen> {
-  late String cityName;
+  String cityName = "";
 
   @override
   Widget build(BuildContext context) {
@@ -50,7 +50,7 @@ class _CityScreenState extends State<CityScreen> {
                 ),
               ),
               TextButton(
-                  child: const Text('Get Weather', style: TextStyle(fontSize: 30.0),),
+                  child: const Text('Get Weather', style: TextStyle(fontSize: 30.0, color: Colors.black),),
                   onPressed: (){
                     Navigator.pop(context, cityName);
                   },
